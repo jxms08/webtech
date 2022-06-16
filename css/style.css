@@ -97,7 +97,7 @@ html {
 .simplecontainer {
     display: grid;
     grid-template-columns: 1fr 2fr .75fr;
-    grid-template-rows: 500px 500px 300px;
+    grid-template-rows: 250px 250px 250px;
     grid-gap: 10px;
     margin: auto;
     width: 70%;
