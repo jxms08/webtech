@@ -1,0 +1,145 @@
+/* CSS Document */
+
+/* CSS Grid */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'HelveticaLTStd-Cond';
+    src: url('../Fonts/HelveticaLTStd-Cond.otf');
+} 
+
+.csstemplategrid {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'nav nav nav nav'
+    'main main main main'
+    'foot foot foot foot';
+}
+
+.header {
+    width: 100%;
+    grid-area: header;
+    height: 150px;
+    background-color: #3778c2;
+}
+
+.header h1 {
+    padding-left: 40px;
+    padding-top: 20px;
+    text-align: left;
+    font-family:'HelveticaLTStd-Cond';
+    font-size: 50px;
+    color: #CAE7D7;
+
+}
+.nav {
+    grid-area: nav;
+    flex: 1;
+    text-align: right;
+    background-color: #0f2557;
+}
+
+.nav ol li {
+    list-style: none;
+    display: inline-block;
+    font-family:'HelveticaLTStd-Cond';
+    margin-right: 40px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav ol li a {
+    text-decoration: none;
+    color: #CAE7D7;
+    font-size: 20px;
+}
+
+.index:hover {
+    color: white;
+}
+
+.main {
+    grid-area: main;
+    background-color: #3778c2
+}
+
+.footer {
+    grid-area: foot;
+    background-color: #0f2557
+}
+
+.footer h4 {
+    font-family:'HelveticaLTStd-Cond';
+    text-align: center;
+    color: #CAE7D7;
+}
+
+.title {
+    text-align: center;
+    font-family:'HelveticaLTStd-Cond';
+    color: #150734;
+    padding-top: 50px;
+}
+
+.description {
+    text-align: center;
+    font-family:'HelveticaLTStd-Cond';
+    color: #150734;
+}
+
+/* Simple Grid Layout */
+
+.simplecontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr .75fr;
+    grid-template-rows: 500px 500px 300px;
+    grid-gap: 10px;
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+}
+
+.simplecontainer img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+/* Complex Grid Layout */
+
+.complexcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px 500px;
+    grid-gap: 10px;
+    margin: auto;
+    width: 70%;
+    padding: 5px;
+}
+
+.complexcontainer div:nth-child(2) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.complexcontainer div:nth-child(5) {
+    grid-column: span 2;
+}
+
+.complexcontainer div:nth-child(6) {
+    grid-row: span 2;
+}
+.complexcontainer div:nth-child(7) {
+    grid-column: span 3;
+}
+
+.complexcontainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
