@@ -115,10 +115,10 @@ html {
 .complexcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-rows: 150px 150px 150px 150px;
     grid-gap: 10px;
     margin: auto;
-    width: 70%;
+    width: 60%;
     padding: 5px;
 }
 
